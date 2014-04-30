@@ -1,0 +1,21 @@
+extend ../includes/layout
+
+block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href="/") WP CONFIG PROTO
+                    h6 TEST
+                .navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li
+                            a(href="/") Home
+
+    section.content
+        div VIEW
+        div(ng-view)
+        div --VIEW
+
+    footer.container.text-center
+        p &copy; 2014 DM
+
